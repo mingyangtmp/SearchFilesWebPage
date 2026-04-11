@@ -255,5 +255,4 @@ langButtons.forEach((button) => {
 footerYear.textContent = new Date().getFullYear();
 
 const storedLanguage = window.localStorage.getItem("searchfiles-language");
-const browserLanguage = navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en";
-setLanguage(storedLanguage || browserLanguage);
+setLanguage(storedLanguage || "en");
