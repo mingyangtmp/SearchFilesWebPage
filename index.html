@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SearchFiles | Local-First File Search for macOS</title>
+    <meta
+      name="description"
+      content="SearchFiles is a bilingual product page for a privacy-first macOS file search app built for fast local indexing, instant lookup, and clear data handling."
+    />
+    <meta
+      name="theme-color"
+      content="#0d1b2a"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="SearchFiles home">
+          <span class="brand-mark">SF</span>
+          <span class="brand-text">SearchFiles</span>
+        </a>
+        <nav class="topnav">
+          <a href="#features" data-i18n="nav.features">Features</a>
+          <a href="#gallery" data-i18n="nav.gallery">Screens</a>
+          <a href="#privacy" data-i18n="nav.privacy">Privacy</a>
+        </nav>
+        <div class="lang-switch" aria-label="Language switcher">
+          <button class="lang-btn" data-lang="zh">中文</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero section">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow">LOCAL-FIRST FILE SEARCH</p>
+            <h1 data-i18n="hero.title">
+              Search across your Mac folders with speed, clarity, and privacy.
+            </h1>
+            <p class="hero-text" data-i18n="hero.description">
+              SearchFiles is a macOS desktop app that indexes file metadata on your device,
+              keeps access read-only, and helps you find documents, code, and media in seconds.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#gallery" data-i18n="hero.primaryCta">
+                See Product Highlights
+              </a>
+              <a class="button button-secondary" href="#privacy" data-i18n="hero.secondaryCta">
+                Read Privacy Policy
+              </a>
+            </div>
+            <div class="hero-stats" aria-label="Product highlights">
+              <article class="stat-card">
+                <span class="stat-value" data-i18n="stats.local.value">100%</span>
+                <span class="stat-label" data-i18n="stats.local.label">Local metadata index</span>
+              </article>
+              <article class="stat-card">
+                <span class="stat-value" data-i18n="stats.permission.value">Read-only</span>
+                <span class="stat-label" data-i18n="stats.permission.label">User-selected folder access</span>
+              </article>
+              <article class="stat-card">
+                <span class="stat-value" data-i18n="stats.engine.value">FTS5</span>
+                <span class="stat-label" data-i18n="stats.engine.label">Fast SQLite search engine</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="device-frame">
+              <img
+                id="hero-image"
+                src="./assets/screenshots/overview.png"
+                alt="SearchFiles overview screenshot"
+              />
+            </div>
+            <div class="floating-note floating-note-top">
+              <span class="note-title" data-i18n="hero.noteLocal.title">Private by design</span>
+              <span class="note-text" data-i18n="hero.noteLocal.text">Index stays on your Mac.</span>
+            </div>
+            <div class="floating-note floating-note-bottom">
+              <span class="note-title" data-i18n="hero.noteSpeed.title">Built for speed</span>
+              <span class="note-text" data-i18n="hero.noteSpeed.text">Search paths, names, and metadata instantly.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-alt" id="features">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="features.eyebrow">WHY SEARCHFILES</p>
+            <h2 data-i18n="features.title">A focused desktop search experience for real working folders</h2>
+            <p data-i18n="features.description">
+              SearchFiles is designed for people who work with large local libraries and need search that stays understandable, lightweight, and private.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3 data-i18n="feature.one.title">Import only the folders you choose</h3>
+              <p data-i18n="feature.one.body">
+                The app stores security-scoped bookmarks for user-selected folders, so you stay in control of which locations are indexed.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="feature.two.title">Search by name, path, and relative path</h3>
+              <p data-i18n="feature.two.body">
+                Find the file you want across imported folders without opening Finder windows or remembering exact locations.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="feature.three.title">Filter intelligently as your library grows</h3>
+              <p data-i18n="feature.three.body">
+                Narrow large result sets by folder scope, file size, and indexed metadata to keep results actionable.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="feature.four.title">Respect the boundaries of your files</h3>
+              <p data-i18n="feature.four.body">
+                SearchFiles indexes metadata, not file contents, and it requests read-only access to folders you explicitly import.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="gallery">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="gallery.eyebrow">PRODUCT TOUR</p>
+            <h2 data-i18n="gallery.title">Three key views that explain the product quickly</h2>
+            <p data-i18n="gallery.description">
+              The screenshots below show the import flow, size-based filtering, and broad code search inside real project folders.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+            <article class="gallery-card">
+              <div class="gallery-image-wrap">
+                <img
+                  id="gallery-image-overview"
+                  src="./assets/screenshots/overview.png"
+                  alt="Overview screenshot"
+                />
+              </div>
+              <div class="gallery-copy">
+                <span class="gallery-tag" data-i18n="gallery.one.tag">Overview</span>
+                <h3 data-i18n="gallery.one.title">Start with imported folders you already trust</h3>
+                <p data-i18n="gallery.one.body">
+                  A clean sidebar keeps imported locations visible, while the main workspace stays focused on search and results.
+                </p>
+              </div>
+            </article>
+
+            <article class="gallery-card">
+              <div class="gallery-image-wrap">
+                <img
+                  id="gallery-image-size"
+                  src="./assets/screenshots/size-filter.png"
+                  alt="Size filter screenshot"
+                />
+              </div>
+              <div class="gallery-copy">
+                <span class="gallery-tag" data-i18n="gallery.two.tag">Filter</span>
+                <h3 data-i18n="gallery.two.title">Locate large files with fast metadata filtering</h3>
+                <p data-i18n="gallery.two.body">
+                  Built-in file size filtering helps you surface oversized videos, archives, or project assets without extra setup.
+                </p>
+              </div>
+            </article>
+
+            <article class="gallery-card">
+              <div class="gallery-image-wrap">
+                <img
+                  id="gallery-image-code"
+                  src="./assets/screenshots/code-search.png"
+                  alt="Code search screenshot"
+                />
+              </div>
+              <div class="gallery-copy">
+                <span class="gallery-tag" data-i18n="gallery.three.tag">Code Search</span>
+                <h3 data-i18n="gallery.three.title">Search broad development folders without losing context</h3>
+                <p data-i18n="gallery.three.body">
+                  Developers can quickly scan project trees by filename and path, then refine results within a selected folder.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-band">
+          <div class="section-heading compact">
+            <p class="eyebrow" data-i18n="usecases.eyebrow">WHO IT HELPS</p>
+            <h2 data-i18n="usecases.title">Built for people who need file search to feel dependable</h2>
+          </div>
+          <div class="pill-grid">
+            <span class="pill" data-i18n="usecases.one">Developers searching project trees</span>
+            <span class="pill" data-i18n="usecases.two">Researchers organizing large archives</span>
+            <span class="pill" data-i18n="usecases.three">Creators finding heavy media files</span>
+            <span class="pill" data-i18n="usecases.four">Anyone who wants local-first search</span>
+          </div>
+        </section>
+
+        <section class="section section-alt" id="privacy">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="privacy.eyebrow">PRIVACY POLICY</p>
+            <h2 data-i18n="privacy.title">Simple rules: local processing, explicit permissions, no silent tracking</h2>
+            <p data-i18n="privacy.subtitle">
+              Last updated: April 11, 2026. This policy describes how SearchFiles handles information when you use the app and this website.
+            </p>
+          </div>
+
+          <div class="privacy-highlights">
+            <article class="privacy-card">
+              <h3 data-i18n="privacy.highlight.one.title">No analytics SDKs or advertising trackers</h3>
+              <p data-i18n="privacy.highlight.one.body">
+                SearchFiles does not use third-party analytics, ad networks, or behavioral tracking in the app.
+              </p>
+            </article>
+            <article class="privacy-card">
+              <h3 data-i18n="privacy.highlight.two.title">Folder access is read-only and user-selected</h3>
+              <p data-i18n="privacy.highlight.two.body">
+                The app asks you to choose folders and then uses sandbox-safe, read-only access to index metadata from those locations.
+              </p>
+            </article>
+            <article class="privacy-card">
+              <h3 data-i18n="privacy.highlight.three.title">Indexed data stays on your device</h3>
+              <p data-i18n="privacy.highlight.three.body">
+                Metadata and folder bookmarks are stored locally in the app sandbox and are not uploaded to the developer by default.
+              </p>
+            </article>
+          </div>
+
+          <div class="policy-grid">
+            <article class="policy-section">
+              <h3 data-i18n="policy.one.title">1. Information the app processes</h3>
+              <p data-i18n="policy.one.body">
+                SearchFiles may process folder names, file names, paths, relative paths, extensions, file sizes, and file creation or modification dates for folders you import. It also stores app-scoped bookmarks so the app can reopen approved folders later.
+              </p>
+            </article>
+            <article class="policy-section">
+              <h3 data-i18n="policy.two.title">2. What the app does not collect</h3>
+              <p data-i18n="policy.two.body">
+                SearchFiles is currently designed around metadata indexing. It does not intentionally read file contents for search, does not embed advertising identifiers, and does not send your index to a remote server as part of normal operation.
+              </p>
+            </article>
+            <article class="policy-section">
+              <h3 data-i18n="policy.three.title">3. How data is stored</h3>
+              <p data-i18n="policy.three.body">
+                Indexed metadata is stored locally on your Mac, typically inside the app's Application Support directory and sandbox container. You can remove imported folders and delete local app data from your device.
+              </p>
+            </article>
+            <article class="policy-section">
+              <h3 data-i18n="policy.four.title">4. Permissions and access</h3>
+              <p data-i18n="policy.four.body">
+                The app uses macOS App Sandbox and security-scoped bookmarks. Folder access is limited to locations you explicitly select, and the current entitlement is read-only.
+              </p>
+            </article>
+            <article class="policy-section">
+              <h3 data-i18n="policy.five.title">5. Website data handling</h3>
+              <p data-i18n="policy.five.body">
+                This website is a static product page. It does not include custom forms, accounts, or embedded analytics in this repository version. Your browser may still make standard requests needed to load the site and web fonts.
+              </p>
+            </article>
+            <article class="policy-section">
+              <h3 data-i18n="policy.six.title">6. Contact</h3>
+              <p>
+                <span data-i18n="policy.six.body">For privacy or product questions, please contact the publisher through the GitHub profile:</span>
+                <a href="https://github.com/mingyangtmp" target="_blank" rel="noreferrer">github.com/mingyangtmp</a>
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <p class="footer-title">SearchFiles</p>
+          <p class="footer-text" data-i18n="footer.description">
+            A local-first macOS file search app focused on fast metadata search and transparent privacy boundaries.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#gallery" data-i18n="footer.product">Product</a>
+          <a href="#privacy" data-i18n="footer.privacy">Privacy</a>
+          <a href="https://github.com/mingyangtmp" target="_blank" rel="noreferrer" data-i18n="footer.github">
+            GitHub
+          </a>
+        </div>
+        <p class="footer-meta">
+          <span id="footer-year"></span>
+          <span data-i18n="footer.meta">SearchFiles. Published with GitHub Pages.</span>
+        </p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
