@@ -10,6 +10,9 @@ const translations = {
     "hero.title": "在你的 Mac 文件夹中，实现更快、更清晰、更安心的搜索。",
     "hero.description":
       "SearchFiles 是一款 macOS 桌面应用，只在你的设备上建立文件元数据索引，以只读方式访问你授权的文件夹，帮助你在几秒内找到文档、代码和媒体文件。",
+    "hero.downloadTop": "立即下载",
+    "hero.downloadBottom": "Mac App Store",
+    "hero.downloadNote": "在 macOS 上会优先打开 App Store，其他设备则回退到网页预览页。",
     "hero.primaryCta": "查看产品亮点",
     "hero.secondaryCta": "阅读隐私政策",
     "stats.local.value": "100%",
@@ -108,6 +111,9 @@ const translations = {
     "hero.title": "Search across your Mac folders with speed, clarity, and privacy.",
     "hero.description":
       "SearchFiles is a macOS desktop app that indexes file metadata on your device, keeps access read-only, and helps you find documents, code, and media in seconds.",
+    "hero.downloadTop": "Download on the",
+    "hero.downloadBottom": "Mac App Store",
+    "hero.downloadNote": "Opens the Mac App Store on macOS, with a web fallback elsewhere.",
     "hero.primaryCta": "See Product Highlights",
     "hero.secondaryCta": "Read Privacy Policy",
     "stats.local.value": "100%",
@@ -204,7 +210,11 @@ const heroImage = document.getElementById("hero-image");
 const galleryOverview = document.getElementById("gallery-image-overview");
 const gallerySize = document.getElementById("gallery-image-size");
 const galleryCode = document.getElementById("gallery-image-code");
+const downloadButton = document.getElementById("download-button");
 const langButtons = [...document.querySelectorAll(".lang-btn")];
+const appleAppId = "6762038997";
+const macAppStoreUrl = `macappstore://itunes.apple.com/app/id${appleAppId}?mt=12`;
+const webAppStoreUrl = `https://apps.apple.com/app/id${appleAppId}?mt=12`;
 
 const altText = {
   zh: {
@@ -220,6 +230,18 @@ const altText = {
     code: "SearchFiles code search screenshot"
   }
 };
+
+function isMacOS() {
+  const platformHint = [
+    navigator.userAgentData?.platform,
+    navigator.platform,
+    navigator.userAgent
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  return /Mac/i.test(platformHint);
+}
 
 function setLanguage(language) {
   const locale = translations[language] ? language : "en";
@@ -251,6 +273,31 @@ function setLanguage(language) {
 langButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
+
+if (downloadButton) {
+  downloadButton.href = webAppStoreUrl;
+
+  downloadButton.addEventListener("click", (event) => {
+    if (!isMacOS()) {
+      return;
+    }
+
+    event.preventDefault();
+
+    const fallbackTimer = window.setTimeout(() => {
+      if (document.visibilityState === "visible") {
+        window.location.href = webAppStoreUrl;
+      }
+    }, 900);
+
+    const clearFallback = () => {
+      window.clearTimeout(fallbackTimer);
+    };
+
+    document.addEventListener("visibilitychange", clearFallback, { once: true });
+    window.location.href = macAppStoreUrl;
+  });
+}
 
 footerYear.textContent = new Date().getFullYear();
 
