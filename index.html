@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SearchFiles | Local-First File Search for macOS</title>
     <meta
       name="description"
-      content="SearchFiles is a bilingual product page for a privacy-first macOS file search app built for fast local indexing, instant lookup, and clear data handling."
+      content="SearchFiles is a multilingual product page for a privacy-first macOS file search app built for fast local indexing, instant lookup, and clear data handling."
     />
     <meta
       name="theme-color"
@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&family=Noto+Sans+KR:wght@400;500;700;800&family=Noto+Sans+SC:wght@400;500;700;800&family=Noto+Sans+TC:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -32,9 +32,19 @@
           <a href="#gallery" data-i18n="nav.gallery">Screens</a>
           <a href="#privacy" data-i18n="nav.privacy">Privacy</a>
         </nav>
-        <div class="lang-switch" aria-label="Language switcher">
-          <button class="lang-btn" data-lang="zh">中文</button>
-          <button class="lang-btn" data-lang="en">EN</button>
+        <div class="lang-switch">
+          <select class="lang-select" id="language-select" aria-label="Language switcher">
+            <option value="zh-Hans">简体中文</option>
+            <option value="zh-Hant">繁體中文</option>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="ja">日本語</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Português</option>
+            <option value="es">Español</option>
+            <option value="ko">한국어</option>
+          </select>
         </div>
       </header>
 
