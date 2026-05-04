@@ -1030,6 +1030,752 @@ const translations = {
   }
 };
 
+const version11Copy = {
+  "zh-Hans": {
+    pageDescription:
+      "SearchFiles 1.1 是一款重视隐私的 macOS 文件搜索应用，支持本地元数据索引、高级搜索、排除子目录、保存搜索和清晰的设置管理。",
+    "hero.eyebrow": "SEARCHFILES 1.1",
+    "hero.title": "用高级搜索、保存搜索和本地索引，更快找到 Mac 文件。",
+    "hero.description":
+      "SearchFiles 现在可以组合关键词、目录、扩展名、文件大小、创建日期和修改日期筛选结果，也能排除草稿、缓存或构建输出等子目录，同时保持元数据索引在本机处理。",
+    "stats.local.value": "元数据",
+    "stats.local.label": "文件名、路径、大小、日期与扩展名",
+    "stats.permission.value": "只读",
+    "stats.permission.label": "明确授权的 macOS 文件夹访问",
+    "stats.engine.value": "1.1",
+    "stats.engine.label": "高级筛选、排除子目录、保存搜索",
+    "hero.noteLocal.title": "只索引元数据",
+    "hero.noteLocal.text": "不读取或索引文件内容。",
+    "hero.noteSpeed.title": "为重复搜索提速",
+    "hero.noteSpeed.text": "常用查询可以保存在侧边栏。",
+    "features.eyebrow": "1.1 新功能",
+    "features.title": "从简单搜索升级为可保存、可排除、可精细筛选的工作流",
+    "features.description":
+      "最近两天的 app 改动围绕真实文件库的日常搜索展开：更精确的筛选、更少噪音，以及更清楚的本地设置。",
+    "feature.one.title": "高级搜索组合多个条件",
+    "feature.one.body":
+      "按关键词、导入目录、扩展名、文件大小、创建日期和修改日期一起筛选，适合面对大型项目目录或资料归档。",
+    "feature.two.title": "排除不想看到的子目录",
+    "feature.two.body":
+      "将草稿、缓存、构建输出或临时目录排除在结果之外，排除路径会立即校验，并受当前搜索范围限制。",
+    "feature.three.title": "保存搜索留在侧边栏",
+    "feature.three.body":
+      "常用查询可以命名并保存，之后从侧边栏一键重新套用，也支持重命名、删除和清空。",
+    "feature.four.title": "设置页覆盖日常偏好",
+    "feature.four.body":
+      "应用语言、浅色/深色主题、每页结果数和每个导入目录的本地数据库缓存用量都集中在设置页。",
+    "gallery.eyebrow": "1.1 产品导览",
+    "gallery.title": "新的搜索流程，从快速定位到精细筛选",
+    "gallery.description":
+      "这些界面来自 2026 年 5 月 4 日整理的 1.1 商店素材，展示保存搜索、高级搜索、排除子目录和设置页。",
+    "gallery.one.tag": "高级搜索",
+    "gallery.one.title": "组合关键词、目录、扩展名、大小和日期",
+    "gallery.one.body":
+      "高级搜索表单把常用筛选条件放在一起，减少手写查询语法的负担。",
+    "gallery.two.tag": "排除子目录",
+    "gallery.two.title": "让搜索结果避开草稿、缓存和临时文件",
+    "gallery.two.body":
+      "排除规则不会改变索引本身，只在当前搜索结果中移除你不想查看的位置。",
+    "gallery.three.tag": "设置",
+    "gallery.three.title": "语言、主题、分页和本地缓存更可控",
+    "gallery.three.body":
+      "设置页现在能调整应用语言和外观，也能查看每个导入目录占用的本地数据库缓存。",
+    "usecases.eyebrow": "适用场景",
+    "usecases.title": "为反复搜索同一批工作目录的人而设计",
+    "usecases.one": "开发者排除 build、cache 和临时目录",
+    "usecases.two": "研究者按日期与扩展名整理档案",
+    "usecases.three": "创作者按大小定位大型媒体资源",
+    "usecases.four": "团队成员保存常用本地查询",
+    "privacy.title": "本地索引、保存搜索和设置偏好都保持透明",
+    "privacy.subtitle":
+      "最后更新于 2026 年 5 月 4 日。本政策说明 SearchFiles 在你使用应用及本网站时如何处理相关信息。",
+    "privacy.highlight.one.title": "不接入分析 SDK 或广告追踪器",
+    "privacy.highlight.one.body":
+      "SearchFiles 当前版本不在应用内使用第三方统计、广告网络或行为追踪工具。",
+    "privacy.highlight.two.title": "高级搜索仍基于本地元数据",
+    "privacy.highlight.two.body":
+      "搜索条件、排除子目录和保存搜索用于筛选本地数据库中的元数据，不需要上传你的文件索引。",
+    "privacy.highlight.three.title": "设置与缓存信息留在设备上",
+    "privacy.highlight.three.body":
+      "应用语言、主题、每页结果数、保存搜索和每个目录的数据库缓存用量都在本地处理。",
+    "policy.one.body":
+      "对于你导入的文件夹，SearchFiles 可能处理目录名、文件名、完整路径、相对路径、扩展名、文件大小以及创建或修改时间。应用还可能保存你创建的保存搜索名称、查询文本、搜索范围，以及语言、主题和每页结果数等偏好。",
+    "policy.two.body":
+      "SearchFiles 目前围绕元数据索引设计，不以文件内容搜索为默认能力，也不会嵌入广告标识符，不会在正常使用中把你的索引、保存搜索或设置发送到远端服务器。",
+    "policy.three.body":
+      "索引后的元数据、保存搜索和设置偏好会保存在你的 Mac 本地，通常位于应用的 Application Support 目录和沙盒容器内。你可以移除已导入文件夹、清空保存搜索，或在设备上删除本地应用数据。",
+    "footer.description":
+      "一款面向 macOS 的本地优先文件搜索应用，聚焦高级元数据筛选、保存搜索与透明的隐私边界。"
+  },
+  "zh-Hant": {
+    pageDescription:
+      "SearchFiles 1.1 是一款重視隱私的 macOS 檔案搜尋應用程式，支援本機元資料索引、進階搜尋、排除子資料夾、儲存搜尋和清楚的設定管理。",
+    "hero.eyebrow": "SEARCHFILES 1.1",
+    "hero.title": "用進階搜尋、儲存搜尋和本機索引，更快找到 Mac 檔案。",
+    "hero.description":
+      "SearchFiles 現在可以組合關鍵字、資料夾、副檔名、檔案大小、建立日期和修改日期篩選結果，也能排除草稿、快取或建置輸出等子資料夾，同時保持元資料索引在本機處理。",
+    "stats.local.value": "元資料",
+    "stats.local.label": "檔名、路徑、大小、日期與副檔名",
+    "stats.permission.value": "唯讀",
+    "stats.permission.label": "明確授權的 macOS 資料夾存取",
+    "stats.engine.value": "1.1",
+    "stats.engine.label": "進階篩選、排除子資料夾、儲存搜尋",
+    "hero.noteLocal.title": "只索引元資料",
+    "hero.noteLocal.text": "不讀取或索引檔案內容。",
+    "hero.noteSpeed.title": "為重複搜尋提速",
+    "hero.noteSpeed.text": "常用查詢可以保存在側邊欄。",
+    "features.eyebrow": "1.1 新功能",
+    "features.title": "從簡單搜尋升級為可儲存、可排除、可精細篩選的工作流程",
+    "features.description":
+      "最近兩天的 app 改動圍繞真實檔案庫的日常搜尋展開：更精確的篩選、更少噪音，以及更清楚的本機設定。",
+    "feature.one.title": "進階搜尋組合多個條件",
+    "feature.one.body":
+      "按關鍵字、匯入資料夾、副檔名、檔案大小、建立日期和修改日期一起篩選，適合面對大型專案目錄或資料歸檔。",
+    "feature.two.title": "排除不想看到的子資料夾",
+    "feature.two.body":
+      "將草稿、快取、建置輸出或臨時資料夾排除在結果之外，排除路徑會立即驗證，並受目前搜尋範圍限制。",
+    "feature.three.title": "儲存搜尋留在側邊欄",
+    "feature.three.body":
+      "常用查詢可以命名並儲存，之後從側邊欄一鍵重新套用，也支援重新命名、刪除和清空。",
+    "feature.four.title": "設定頁涵蓋日常偏好",
+    "feature.four.body":
+      "應用程式語言、明亮/深色主題、每頁結果數和每個匯入資料夾的本機資料庫快取用量都集中在設定頁。",
+    "gallery.eyebrow": "1.1 產品導覽",
+    "gallery.title": "新的搜尋流程，從快速定位到精細篩選",
+    "gallery.description":
+      "這些介面來自 2026 年 5 月 4 日整理的 1.1 商店素材，展示儲存搜尋、進階搜尋、排除子資料夾和設定頁。",
+    "gallery.one.tag": "進階搜尋",
+    "gallery.one.title": "組合關鍵字、資料夾、副檔名、大小和日期",
+    "gallery.one.body":
+      "進階搜尋表單把常用篩選條件放在一起，減少手寫查詢語法的負擔。",
+    "gallery.two.tag": "排除子資料夾",
+    "gallery.two.title": "讓搜尋結果避開草稿、快取和臨時檔案",
+    "gallery.two.body":
+      "排除規則不會改變索引本身，只在目前搜尋結果中移除你不想查看的位置。",
+    "gallery.three.tag": "設定",
+    "gallery.three.title": "語言、主題、分頁和本機快取更可控",
+    "gallery.three.body":
+      "設定頁現在能調整應用程式語言和外觀，也能查看每個匯入資料夾占用的本機資料庫快取。",
+    "usecases.eyebrow": "適用場景",
+    "usecases.title": "為反覆搜尋同一批工作資料夾的人而設計",
+    "usecases.one": "開發者排除 build、cache 和臨時目錄",
+    "usecases.two": "研究者按日期與副檔名整理檔案",
+    "usecases.three": "創作者按大小定位大型媒體資源",
+    "usecases.four": "團隊成員儲存常用本機查詢",
+    "privacy.title": "本機索引、儲存搜尋和設定偏好都保持透明",
+    "privacy.subtitle":
+      "最後更新於 2026 年 5 月 4 日。本政策說明 SearchFiles 在你使用應用程式及本網站時如何處理相關資訊。",
+    "privacy.highlight.one.title": "不接入分析 SDK 或廣告追蹤器",
+    "privacy.highlight.one.body":
+      "SearchFiles 目前版本不在應用程式內使用第三方統計、廣告網路或行為追蹤工具。",
+    "privacy.highlight.two.title": "進階搜尋仍基於本機元資料",
+    "privacy.highlight.two.body":
+      "搜尋條件、排除子資料夾和儲存搜尋用於篩選本機資料庫中的元資料，不需要上傳你的檔案索引。",
+    "privacy.highlight.three.title": "設定與快取資訊留在裝置上",
+    "privacy.highlight.three.body":
+      "應用程式語言、主題、每頁結果數、儲存搜尋和每個目錄的資料庫快取用量都在本機處理。",
+    "policy.one.body":
+      "對於你匯入的資料夾，SearchFiles 可能處理目錄名、檔名、完整路徑、相對路徑、副檔名、檔案大小以及建立或修改時間。應用程式也可能保存你建立的儲存搜尋名稱、查詢文字、搜尋範圍，以及語言、主題和每頁結果數等偏好。",
+    "policy.two.body":
+      "SearchFiles 目前圍繞元資料索引設計，不以檔案內容搜尋為預設能力，也不會嵌入廣告識別碼，不會在正常使用中把你的索引、儲存搜尋或設定傳送到遠端伺服器。",
+    "policy.three.body":
+      "索引後的元資料、儲存搜尋和設定偏好會保存在你的 Mac 本機，通常位於應用程式的 Application Support 目錄和沙盒容器內。你可以移除已匯入資料夾、清空儲存搜尋，或在裝置上刪除本機應用程式資料。",
+    "footer.description":
+      "一款面向 macOS 的本機優先檔案搜尋應用程式，聚焦進階元資料篩選、儲存搜尋與透明的隱私邊界。"
+  },
+  en: {
+    pageDescription:
+      "SearchFiles 1.1 is a privacy-first macOS file search app with local metadata indexing, Advanced Search, subfolder exclusions, saved searches, and clear settings.",
+    "hero.eyebrow": "SEARCHFILES 1.1",
+    "hero.title": "Find Mac files faster with Advanced Search, saved searches, and a local index.",
+    "hero.description":
+      "SearchFiles now combines keywords, folders, extensions, file size, created dates, and modified dates, while letting you exclude drafts, caches, build outputs, and other noisy subfolders without uploading your metadata index.",
+    "stats.local.value": "Metadata",
+    "stats.local.label": "Names, paths, sizes, dates, and extensions",
+    "stats.permission.value": "Read-only",
+    "stats.permission.label": "Explicit macOS folder permissions",
+    "stats.engine.value": "1.1",
+    "stats.engine.label": "Advanced filters, exclusions, saved searches",
+    "hero.noteLocal.title": "Metadata only",
+    "hero.noteLocal.text": "File contents are not read or indexed.",
+    "hero.noteSpeed.title": "Built for repeat searches",
+    "hero.noteSpeed.text": "Frequent queries stay ready in the sidebar.",
+    "features.eyebrow": "WHAT'S NEW IN 1.1",
+    "features.title": "A richer workflow for precise, repeatable local file search",
+    "features.description":
+      "The latest app changes focus on real working folders: more precise filters, fewer noisy results, saved searches, and clearer local settings.",
+    "feature.one.title": "Combine filters in Advanced Search",
+    "feature.one.body":
+      "Filter by keywords, imported folder, extension, file size, created date, and modified date in one focused search sheet.",
+    "feature.two.title": "Exclude noisy subfolders",
+    "feature.two.body":
+      "Skip drafts, caches, build outputs, or temporary folders. Excluded paths are validated immediately and must belong to the current search scope.",
+    "feature.three.title": "Save searches in the sidebar",
+    "feature.three.body":
+      "Name frequent queries, reapply them from the sidebar, and manage them with rename, delete, and clear controls.",
+    "feature.four.title": "Tune everyday settings",
+    "feature.four.body":
+      "Set app language, light or dark appearance, results per page, and view local database cache usage for each imported folder.",
+    "gallery.eyebrow": "1.1 PRODUCT TOUR",
+    "gallery.title": "New search views, from fast lookup to precise filtering",
+    "gallery.description":
+      "These screens come from the 1.1 store assets prepared on May 4, 2026, covering saved searches, Advanced Search, subfolder exclusions, and Settings.",
+    "gallery.one.tag": "Advanced Search",
+    "gallery.one.title": "Combine keywords, folder, extension, size, and dates",
+    "gallery.one.body":
+      "Advanced Search brings the common filters together so you do not have to hand-write query syntax.",
+    "gallery.two.tag": "Exclusions",
+    "gallery.two.title": "Keep drafts, caches, and temporary files out of results",
+    "gallery.two.body":
+      "Exclusion rules leave the index unchanged and remove unwanted locations only from the current result set.",
+    "gallery.three.tag": "Settings",
+    "gallery.three.title": "Control language, theme, pagination, and local cache visibility",
+    "gallery.three.body":
+      "Settings now includes app language, appearance, results per page, and local database cache usage for imported folders.",
+    "usecases.eyebrow": "WORKFLOWS",
+    "usecases.title": "Built for people who search the same working folders again and again",
+    "usecases.one": "Developers excluding build, cache, and temp folders",
+    "usecases.two": "Researchers sorting archives by date and extension",
+    "usecases.three": "Creators locating large media assets by size",
+    "usecases.four": "Teams saving repeat local queries",
+    "privacy.title": "Local indexing, saved searches, and settings stay transparent",
+    "privacy.subtitle":
+      "Last updated: May 4, 2026. This policy describes how SearchFiles handles information when you use the app and this website.",
+    "privacy.highlight.one.title": "No analytics SDKs or advertising trackers",
+    "privacy.highlight.one.body":
+      "SearchFiles does not use third-party analytics, ad networks, or behavioral tracking in the app.",
+    "privacy.highlight.two.title": "Advanced Search still works from local metadata",
+    "privacy.highlight.two.body":
+      "Filters, excluded subfolders, and saved searches are used to query metadata in the local database without uploading your file index.",
+    "privacy.highlight.three.title": "Settings and cache information stay on device",
+    "privacy.highlight.three.body":
+      "Language, theme, results per page, saved searches, and per-folder database cache usage are handled locally.",
+    "policy.one.body":
+      "SearchFiles may process folder names, file names, paths, relative paths, extensions, file sizes, and file creation or modification dates for folders you import. It may also store saved search names, query text, search scope, and preferences such as language, theme, and results per page.",
+    "policy.two.body":
+      "SearchFiles is currently designed around metadata indexing. It does not intentionally read file contents for search, does not embed advertising identifiers, and does not send your index, saved searches, or settings to a remote server as part of normal operation.",
+    "policy.three.body":
+      "Indexed metadata, saved searches, and settings are stored locally on your Mac, typically inside the app's Application Support directory and sandbox container. You can remove imported folders, clear saved searches, and delete local app data from your device.",
+    "footer.description":
+      "A local-first macOS file search app focused on advanced metadata filtering, saved searches, and transparent privacy boundaries."
+  },
+  fr: {
+    pageDescription:
+      "SearchFiles 1.1 est une app macOS de recherche de fichiers axée sur la confidentialité, avec indexation locale des métadonnées, recherche avancée, exclusions de sous-dossiers, recherches enregistrées et réglages clairs.",
+    "hero.eyebrow": "SEARCHFILES 1.1",
+    "hero.title": "Trouvez vos fichiers Mac plus vite avec recherche avancée, requêtes enregistrées et index local.",
+    "hero.description":
+      "SearchFiles combine désormais mots-clés, dossiers, extensions, taille, dates de création et de modification, tout en permettant d'exclure brouillons, caches, sorties de build et sous-dossiers bruyants sans envoyer votre index de métadonnées.",
+    "stats.local.value": "Métadonnées",
+    "stats.local.label": "Noms, chemins, tailles, dates et extensions",
+    "stats.permission.value": "Lecture seule",
+    "stats.permission.label": "Autorisations macOS explicites",
+    "stats.engine.value": "1.1",
+    "stats.engine.label": "Filtres avancés, exclusions, recherches enregistrées",
+    "hero.noteLocal.title": "Métadonnées uniquement",
+    "hero.noteLocal.text": "Le contenu des fichiers n'est ni lu ni indexé.",
+    "hero.noteSpeed.title": "Pensé pour les recherches répétées",
+    "hero.noteSpeed.text": "Les requêtes fréquentes restent dans la barre latérale.",
+    "features.eyebrow": "NOUVEAUTÉS 1.1",
+    "features.title": "Un flux plus riche pour une recherche locale précise et réutilisable",
+    "features.description":
+      "Les derniers changements visent les vrais dossiers de travail : filtres plus précis, moins de bruit, recherches enregistrées et réglages locaux plus clairs.",
+    "feature.one.title": "Combinez les filtres dans la recherche avancée",
+    "feature.one.body":
+      "Filtrez par mots-clés, dossier importé, extension, taille, date de création et date de modification dans une feuille de recherche dédiée.",
+    "feature.two.title": "Excluez les sous-dossiers bruyants",
+    "feature.two.body":
+      "Ignorez brouillons, caches, sorties de build ou dossiers temporaires. Les chemins exclus sont validés immédiatement et doivent appartenir à la portée actuelle.",
+    "feature.three.title": "Enregistrez vos recherches dans la barre latérale",
+    "feature.three.body":
+      "Nommez les requêtes fréquentes, relancez-les depuis la barre latérale et gérez-les avec renommage, suppression et effacement.",
+    "feature.four.title": "Ajustez les réglages du quotidien",
+    "feature.four.body":
+      "Choisissez la langue de l'app, le thème clair ou sombre, le nombre de résultats par page et consultez le cache local de chaque dossier importé.",
+    "gallery.eyebrow": "VISITE 1.1",
+    "gallery.title": "De nouvelles vues, de la recherche rapide au filtrage précis",
+    "gallery.description":
+      "Ces écrans proviennent des ressources Store 1.1 préparées le 4 mai 2026, avec recherches enregistrées, recherche avancée, exclusions et réglages.",
+    "gallery.one.tag": "Recherche avancée",
+    "gallery.one.title": "Combinez mots-clés, dossier, extension, taille et dates",
+    "gallery.one.body":
+      "La recherche avancée regroupe les filtres courants pour éviter d'écrire la syntaxe de requête à la main.",
+    "gallery.two.tag": "Exclusions",
+    "gallery.two.title": "Gardez brouillons, caches et fichiers temporaires hors des résultats",
+    "gallery.two.body":
+      "Les règles d'exclusion ne modifient pas l'index et retirent seulement les emplacements indésirables des résultats actuels.",
+    "gallery.three.tag": "Réglages",
+    "gallery.three.title": "Contrôlez langue, thème, pagination et cache local",
+    "gallery.three.body":
+      "Les réglages incluent désormais langue, apparence, résultats par page et usage du cache local par dossier importé.",
+    "usecases.eyebrow": "FLUX DE TRAVAIL",
+    "usecases.title": "Conçu pour rechercher souvent les mêmes dossiers de travail",
+    "usecases.one": "Développeurs excluant build, cache et dossiers temporaires",
+    "usecases.two": "Chercheurs classant des archives par date et extension",
+    "usecases.three": "Créateurs localisant de gros médias par taille",
+    "usecases.four": "Équipes enregistrant des requêtes locales récurrentes",
+    "privacy.title": "Index local, recherches enregistrées et réglages restent transparents",
+    "privacy.subtitle":
+      "Dernière mise à jour : 4 mai 2026. Cette politique décrit comment SearchFiles traite les informations lorsque vous utilisez l'app et ce site.",
+    "privacy.highlight.two.title": "La recherche avancée reste basée sur les métadonnées locales",
+    "privacy.highlight.two.body":
+      "Les filtres, sous-dossiers exclus et recherches enregistrées interrogent les métadonnées locales sans téléverser votre index.",
+    "privacy.highlight.three.title": "Réglages et cache restent sur l'appareil",
+    "privacy.highlight.three.body":
+      "Langue, thème, résultats par page, recherches enregistrées et cache de base de données par dossier sont traités localement.",
+    "policy.one.body":
+      "SearchFiles peut traiter les noms de dossiers, noms de fichiers, chemins, chemins relatifs, extensions, tailles de fichiers et dates de création ou de modification des dossiers importés. Il peut aussi stocker les noms de recherches enregistrées, le texte des requêtes, la portée de recherche et des préférences comme langue, thème et résultats par page.",
+    "policy.two.body":
+      "SearchFiles est actuellement conçu autour de l'indexation des métadonnées. Il ne lit pas intentionnellement le contenu des fichiers pour la recherche, n'intègre pas d'identifiants publicitaires et n'envoie pas votre index, vos recherches enregistrées ou vos réglages à un serveur distant pendant l'utilisation normale.",
+    "policy.three.body":
+      "Les métadonnées indexées, recherches enregistrées et réglages sont stockés localement sur votre Mac, généralement dans le dossier Application Support de l'app et son conteneur sandbox. Vous pouvez retirer des dossiers importés, effacer les recherches enregistrées et supprimer les données locales de l'app.",
+    "footer.description":
+      "Une app macOS de recherche locale centrée sur le filtrage avancé des métadonnées, les recherches enregistrées et des limites de confidentialité transparentes."
+  },
+  de: {
+    pageDescription:
+      "SearchFiles 1.1 ist eine datenschutzorientierte macOS-Dateisuche mit lokalem Metadatenindex, erweiterter Suche, Unterordner-Ausschlüssen, gespeicherten Suchen und klaren Einstellungen.",
+    "hero.eyebrow": "SEARCHFILES 1.1",
+    "hero.title": "Finde Mac-Dateien schneller mit erweiterter Suche, gespeicherten Suchen und lokalem Index.",
+    "hero.description":
+      "SearchFiles kombiniert jetzt Stichwörter, Ordner, Erweiterungen, Dateigröße, Erstellungs- und Änderungsdaten und kann Entwürfe, Caches, Build-Ausgaben und andere störende Unterordner ausschließen, ohne deinen Metadatenindex hochzuladen.",
+    "stats.local.value": "Metadaten",
+    "stats.local.label": "Namen, Pfade, Größen, Daten und Erweiterungen",
+    "stats.permission.value": "Nur lesen",
+    "stats.permission.label": "Ausdrückliche macOS-Ordnerrechte",
+    "stats.engine.value": "1.1",
+    "stats.engine.label": "Erweiterte Filter, Ausschlüsse, gespeicherte Suchen",
+    "hero.noteLocal.title": "Nur Metadaten",
+    "hero.noteLocal.text": "Dateiinhalte werden nicht gelesen oder indexiert.",
+    "hero.noteSpeed.title": "Für wiederholte Suchen gebaut",
+    "hero.noteSpeed.text": "Häufige Abfragen bleiben in der Seitenleiste.",
+    "features.eyebrow": "NEU IN 1.1",
+    "features.title": "Ein stärkerer Workflow für präzise und wiederholbare lokale Dateisuche",
+    "features.description":
+      "Die neuesten Änderungen zielen auf echte Arbeitsordner: genauere Filter, weniger Rauschen, gespeicherte Suchen und klarere lokale Einstellungen.",
+    "feature.one.title": "Filter in der erweiterten Suche kombinieren",
+    "feature.one.body":
+      "Filtere nach Stichwörtern, importiertem Ordner, Erweiterung, Dateigröße, Erstellungsdatum und Änderungsdatum in einem Suchdialog.",
+    "feature.two.title": "Störende Unterordner ausschließen",
+    "feature.two.body":
+      "Überspringe Entwürfe, Caches, Build-Ausgaben oder temporäre Ordner. Ausgeschlossene Pfade werden sofort geprüft und müssen im aktuellen Suchbereich liegen.",
+    "feature.three.title": "Suchen in der Seitenleiste speichern",
+    "feature.three.body":
+      "Benenne häufige Abfragen, wende sie aus der Seitenleiste erneut an und verwalte sie mit Umbenennen, Löschen und Bereinigen.",
+    "feature.four.title": "Alltagseinstellungen anpassen",
+    "feature.four.body":
+      "Lege App-Sprache, helles oder dunkles Design und Ergebnisse pro Seite fest und sieh den lokalen Datenbankcache jedes importierten Ordners.",
+    "gallery.eyebrow": "1.1 PRODUKTRUNDGANG",
+    "gallery.title": "Neue Suchansichten, von schneller Suche bis präzisem Filtern",
+    "gallery.description":
+      "Diese Ansichten stammen aus den Store-Assets 1.1 vom 4. Mai 2026 und zeigen gespeicherte Suchen, erweiterte Suche, Ausschlüsse und Einstellungen.",
+    "gallery.one.tag": "Erweiterte Suche",
+    "gallery.one.title": "Kombiniere Stichwörter, Ordner, Erweiterung, Größe und Daten",
+    "gallery.one.body":
+      "Die erweiterte Suche bündelt die wichtigsten Filter, damit du keine Abfragesyntax von Hand schreiben musst.",
+    "gallery.two.tag": "Ausschlüsse",
+    "gallery.two.title": "Halte Entwürfe, Caches und temporäre Dateien aus Ergebnissen heraus",
+    "gallery.two.body":
+      "Ausschlussregeln ändern den Index nicht und entfernen unerwünschte Orte nur aus den aktuellen Ergebnissen.",
+    "gallery.three.tag": "Einstellungen",
+    "gallery.three.title": "Sprache, Design, Paginierung und lokalen Cache kontrollieren",
+    "gallery.three.body":
+      "Die Einstellungen enthalten jetzt Sprache, Erscheinungsbild, Ergebnisse pro Seite und lokalen Datenbankcache pro importiertem Ordner.",
+    "usecases.eyebrow": "WORKFLOWS",
+    "usecases.title": "Gebaut für alle, die dieselben Arbeitsordner immer wieder durchsuchen",
+    "usecases.one": "Entwickler, die Build-, Cache- und Temp-Ordner ausschließen",
+    "usecases.two": "Forschende, die Archive nach Datum und Erweiterung sortieren",
+    "usecases.three": "Kreative, die große Medien nach Größe finden",
+    "usecases.four": "Teams, die wiederkehrende lokale Abfragen speichern",
+    "privacy.title": "Lokaler Index, gespeicherte Suchen und Einstellungen bleiben transparent",
+    "privacy.subtitle":
+      "Zuletzt aktualisiert: 4. Mai 2026. Diese Erklärung beschreibt, wie SearchFiles Informationen verarbeitet, wenn du die App und diese Website nutzt.",
+    "privacy.highlight.two.title": "Erweiterte Suche basiert weiter auf lokalen Metadaten",
+    "privacy.highlight.two.body":
+      "Filter, ausgeschlossene Unterordner und gespeicherte Suchen fragen Metadaten in der lokalen Datenbank ab, ohne deinen Dateiindex hochzuladen.",
+    "privacy.highlight.three.title": "Einstellungen und Cache-Informationen bleiben auf dem Gerät",
+    "privacy.highlight.three.body":
+      "Sprache, Design, Ergebnisse pro Seite, gespeicherte Suchen und Datenbankcache pro Ordner werden lokal verarbeitet.",
+    "policy.one.body":
+      "SearchFiles kann für importierte Ordner Ordnernamen, Dateinamen, Pfade, relative Pfade, Erweiterungen, Dateigrößen sowie Erstellungs- oder Änderungsdaten verarbeiten. Die App kann außerdem Namen gespeicherter Suchen, Abfragetext, Suchbereich und Einstellungen wie Sprache, Design und Ergebnisse pro Seite speichern.",
+    "policy.two.body":
+      "SearchFiles ist derzeit auf Metadatenindexierung ausgelegt. Die App liest Dateiinhalte nicht absichtlich für die Suche, bettet keine Werbe-IDs ein und sendet deinen Index, gespeicherte Suchen oder Einstellungen bei normaler Nutzung nicht an einen Remote-Server.",
+    "policy.three.body":
+      "Indexierte Metadaten, gespeicherte Suchen und Einstellungen werden lokal auf deinem Mac gespeichert, normalerweise im Application-Support-Ordner der App und im Sandbox-Container. Du kannst importierte Ordner entfernen, gespeicherte Suchen bereinigen und lokale App-Daten löschen.",
+    "footer.description":
+      "Eine lokale macOS-Dateisuche mit Fokus auf erweiterte Metadatenfilter, gespeicherte Suchen und transparente Datenschutzgrenzen."
+  },
+  ja: {
+    pageDescription:
+      "SearchFiles 1.1 は、ローカルメタデータ索引、詳細検索、サブフォルダ除外、保存済み検索、明確な設定を備えた、プライバシー重視の macOS ファイル検索アプリです。",
+    "hero.eyebrow": "SEARCHFILES 1.1",
+    "hero.title": "詳細検索、保存済み検索、ローカル索引で Mac のファイルをより速く発見。",
+    "hero.description":
+      "SearchFiles はキーワード、フォルダ、拡張子、ファイルサイズ、作成日、変更日を組み合わせられるようになりました。下書き、キャッシュ、ビルド出力などのサブフォルダを除外しても、メタデータ索引はアップロードされません。",
+    "stats.local.value": "メタデータ",
+    "stats.local.label": "名前、パス、サイズ、日付、拡張子",
+    "stats.permission.value": "読み取り専用",
+    "stats.permission.label": "明示的な macOS フォルダ権限",
+    "stats.engine.value": "1.1",
+    "stats.engine.label": "詳細フィルタ、除外、保存済み検索",
+    "hero.noteLocal.title": "メタデータのみ",
+    "hero.noteLocal.text": "ファイル内容は読み取らず索引化もしません。",
+    "hero.noteSpeed.title": "繰り返す検索を高速に",
+    "hero.noteSpeed.text": "よく使うクエリはサイドバーに残せます。",
+    "features.eyebrow": "1.1 の新機能",
+    "features.title": "正確で繰り返し使えるローカルファイル検索ワークフロー",
+    "features.description":
+      "最新の変更は実際の作業フォルダに焦点を当てています。より正確なフィルタ、少ないノイズ、保存済み検索、わかりやすいローカル設定です。",
+    "feature.one.title": "詳細検索で複数条件を組み合わせ",
+    "feature.one.body":
+      "キーワード、読み込み済みフォルダ、拡張子、ファイルサイズ、作成日、変更日を 1 つの検索シートで絞り込めます。",
+    "feature.two.title": "不要なサブフォルダを除外",
+    "feature.two.body":
+      "下書き、キャッシュ、ビルド出力、一時フォルダを除外できます。除外パスはすぐ検証され、現在の検索範囲内にある必要があります。",
+    "feature.three.title": "検索をサイドバーに保存",
+    "feature.three.body":
+      "よく使うクエリに名前を付けて保存し、サイドバーから再適用できます。名前変更、削除、消去にも対応します。",
+    "feature.four.title": "日常設定を調整",
+    "feature.four.body":
+      "アプリ言語、ライト/ダーク外観、ページあたりの結果数、読み込み済みフォルダごとのローカルデータベースキャッシュを確認できます。",
+    "gallery.eyebrow": "1.1 製品ツアー",
+    "gallery.title": "すばやい検索から精密な絞り込みまで、新しい検索画面",
+    "gallery.description":
+      "これらの画面は 2026 年 5 月 4 日に準備された 1.1 Store 素材で、保存済み検索、詳細検索、除外、設定を示しています。",
+    "gallery.one.tag": "詳細検索",
+    "gallery.one.title": "キーワード、フォルダ、拡張子、サイズ、日付を組み合わせ",
+    "gallery.one.body":
+      "詳細検索は一般的なフィルタをまとめ、クエリ構文を手入力する負担を減らします。",
+    "gallery.two.tag": "除外",
+    "gallery.two.title": "下書き、キャッシュ、一時ファイルを結果から外す",
+    "gallery.two.body":
+      "除外ルールは索引を変更せず、現在の結果から不要な場所だけを取り除きます。",
+    "gallery.three.tag": "設定",
+    "gallery.three.title": "言語、テーマ、ページ分割、ローカルキャッシュを管理",
+    "gallery.three.body":
+      "設定にはアプリ言語、外観、ページあたりの結果数、フォルダごとのローカルデータベースキャッシュが追加されました。",
+    "usecases.eyebrow": "ワークフロー",
+    "usecases.title": "同じ作業フォルダを何度も検索する人のために設計",
+    "usecases.one": "build、cache、一時フォルダを除外する開発者",
+    "usecases.two": "日付と拡張子でアーカイブを整理する研究者",
+    "usecases.three": "サイズで大きなメディア素材を探すクリエイター",
+    "usecases.four": "繰り返すローカルクエリを保存するチーム",
+    "privacy.title": "ローカル索引、保存済み検索、設定を透明に扱います",
+    "privacy.subtitle":
+      "最終更新日：2026 年 5 月 4 日。このポリシーは、アプリとこの Web サイトの利用時に SearchFiles が情報をどう扱うかを説明します。",
+    "privacy.highlight.two.title": "詳細検索もローカルメタデータに基づきます",
+    "privacy.highlight.two.body":
+      "フィルタ、除外サブフォルダ、保存済み検索はローカルデータベースのメタデータを検索し、ファイル索引をアップロードしません。",
+    "privacy.highlight.three.title": "設定とキャッシュ情報は端末に残ります",
+    "privacy.highlight.three.body":
+      "言語、テーマ、ページあたりの結果数、保存済み検索、フォルダごとのデータベースキャッシュはローカルで処理されます。",
+    "policy.one.body":
+      "インポートしたフォルダについて、SearchFiles はフォルダ名、ファイル名、パス、相対パス、拡張子、ファイルサイズ、作成日や変更日を処理する場合があります。また、保存済み検索の名前、クエリ文字列、検索範囲、言語、テーマ、ページあたりの結果数などの設定を保存する場合があります。",
+    "policy.two.body":
+      "SearchFiles は現在、メタデータのインデックスを中心に設計されています。検索のためにファイル内容を意図的に読むことはなく、広告識別子を組み込まず、通常利用時にインデックス、保存済み検索、設定をリモートサーバーへ送信しません。",
+    "policy.three.body":
+      "インデックス済みメタデータ、保存済み検索、設定は Mac 上にローカル保存され、通常はアプリの Application Support ディレクトリとサンドボックスコンテナ内にあります。インポート済みフォルダの削除、保存済み検索の消去、ローカルアプリデータの削除ができます。",
+    "footer.description":
+      "詳細なメタデータ絞り込み、保存済み検索、透明なプライバシー境界に重点を置いた、macOS 向けローカル優先ファイル検索アプリ。"
+  },
+  it: {
+    pageDescription:
+      "SearchFiles 1.1 è un'app macOS per cercare file con privacy al centro, indice locale dei metadati, ricerca avanzata, esclusione di sottocartelle, ricerche salvate e impostazioni chiare.",
+    "hero.eyebrow": "SEARCHFILES 1.1",
+    "hero.title": "Trova file Mac più velocemente con ricerca avanzata, query salvate e indice locale.",
+    "hero.description":
+      "SearchFiles ora combina parole chiave, cartelle, estensioni, dimensione file, date di creazione e modifica, e permette di escludere bozze, cache, output di build e altre sottocartelle rumorose senza caricare l'indice dei metadati.",
+    "stats.local.value": "Metadati",
+    "stats.local.label": "Nomi, percorsi, dimensioni, date ed estensioni",
+    "stats.permission.value": "Sola lettura",
+    "stats.permission.label": "Permessi cartelle macOS espliciti",
+    "stats.engine.value": "1.1",
+    "stats.engine.label": "Filtri avanzati, esclusioni, ricerche salvate",
+    "hero.noteLocal.title": "Solo metadati",
+    "hero.noteLocal.text": "Il contenuto dei file non viene letto o indicizzato.",
+    "hero.noteSpeed.title": "Pensato per ricerche ricorrenti",
+    "hero.noteSpeed.text": "Le query frequenti restano pronte nella barra laterale.",
+    "features.eyebrow": "NOVITÀ 1.1",
+    "features.title": "Un flusso più ricco per una ricerca locale precisa e riutilizzabile",
+    "features.description":
+      "Le ultime modifiche puntano alle cartelle di lavoro reali: filtri più precisi, meno rumore, ricerche salvate e impostazioni locali più chiare.",
+    "feature.one.title": "Combina filtri nella ricerca avanzata",
+    "feature.one.body":
+      "Filtra per parole chiave, cartella importata, estensione, dimensione file, data di creazione e data di modifica in un unico pannello.",
+    "feature.two.title": "Escludi sottocartelle rumorose",
+    "feature.two.body":
+      "Salta bozze, cache, output di build o cartelle temporanee. I percorsi esclusi sono verificati subito e devono appartenere all'ambito corrente.",
+    "feature.three.title": "Salva ricerche nella barra laterale",
+    "feature.three.body":
+      "Dai un nome alle query frequenti, riapplicale dalla barra laterale e gestiscile con rinomina, eliminazione e pulizia.",
+    "feature.four.title": "Regola le impostazioni quotidiane",
+    "feature.four.body":
+      "Imposta lingua app, tema chiaro o scuro, risultati per pagina e visualizza l'uso cache del database locale per ogni cartella importata.",
+    "gallery.eyebrow": "TOUR 1.1",
+    "gallery.title": "Nuove viste di ricerca, dalla ricerca rapida al filtro preciso",
+    "gallery.description":
+      "Queste schermate provengono dagli asset Store 1.1 preparati il 4 maggio 2026 e mostrano ricerche salvate, ricerca avanzata, esclusioni e impostazioni.",
+    "gallery.one.tag": "Ricerca avanzata",
+    "gallery.one.title": "Combina parole chiave, cartella, estensione, dimensione e date",
+    "gallery.one.body":
+      "La ricerca avanzata riunisce i filtri comuni per evitare di scrivere a mano la sintassi della query.",
+    "gallery.two.tag": "Esclusioni",
+    "gallery.two.title": "Tieni fuori dai risultati bozze, cache e file temporanei",
+    "gallery.two.body":
+      "Le regole di esclusione non cambiano l'indice e rimuovono posizioni indesiderate solo dai risultati correnti.",
+    "gallery.three.tag": "Impostazioni",
+    "gallery.three.title": "Controlla lingua, tema, paginazione e cache locale",
+    "gallery.three.body":
+      "Le impostazioni ora includono lingua, aspetto, risultati per pagina e uso del database locale per cartella importata.",
+    "usecases.eyebrow": "FLUSSI DI LAVORO",
+    "usecases.title": "Creato per chi cerca spesso nelle stesse cartelle di lavoro",
+    "usecases.one": "Sviluppatori che escludono build, cache e cartelle temporanee",
+    "usecases.two": "Ricercatori che ordinano archivi per data ed estensione",
+    "usecases.three": "Creator che trovano grandi media per dimensione",
+    "usecases.four": "Team che salvano query locali ricorrenti",
+    "privacy.title": "Indice locale, ricerche salvate e impostazioni restano trasparenti",
+    "privacy.subtitle":
+      "Ultimo aggiornamento: 4 maggio 2026. Questa informativa descrive come SearchFiles gestisce le informazioni quando usi l'app e questo sito.",
+    "privacy.highlight.two.title": "La ricerca avanzata usa ancora metadati locali",
+    "privacy.highlight.two.body":
+      "Filtri, sottocartelle escluse e ricerche salvate interrogano i metadati nel database locale senza caricare l'indice dei file.",
+    "privacy.highlight.three.title": "Impostazioni e cache restano sul dispositivo",
+    "privacy.highlight.three.body":
+      "Lingua, tema, risultati per pagina, ricerche salvate e uso cache per cartella sono gestiti localmente.",
+    "policy.one.body":
+      "SearchFiles può elaborare nomi di cartelle, nomi file, percorsi, percorsi relativi, estensioni, dimensioni file e date di creazione o modifica delle cartelle importate. Può anche salvare nomi delle ricerche, testo query, ambito di ricerca e preferenze come lingua, tema e risultati per pagina.",
+    "policy.two.body":
+      "SearchFiles è attualmente progettato intorno all'indicizzazione dei metadati. Non legge intenzionalmente il contenuto dei file per la ricerca, non integra identificatori pubblicitari e non invia il tuo indice, le ricerche salvate o le impostazioni a un server remoto durante l'uso normale.",
+    "policy.three.body":
+      "Metadati indicizzati, ricerche salvate e impostazioni sono salvati localmente sul tuo Mac, di solito nella cartella Application Support dell'app e nel contenitore sandbox. Puoi rimuovere cartelle importate, pulire le ricerche salvate ed eliminare i dati locali dell'app.",
+    "footer.description":
+      "Un'app macOS di ricerca file locale, focalizzata su filtri avanzati dei metadati, ricerche salvate e confini privacy trasparenti."
+  },
+  pt: {
+    pageDescription:
+      "SearchFiles 1.1 é um app macOS de busca de arquivos com foco em privacidade, índice local de metadados, busca avançada, exclusão de subpastas, buscas salvas e configurações claras.",
+    "hero.eyebrow": "SEARCHFILES 1.1",
+    "hero.title": "Encontre arquivos do Mac mais rápido com busca avançada, buscas salvas e índice local.",
+    "hero.description":
+      "SearchFiles agora combina palavras-chave, pastas, extensões, tamanho, datas de criação e modificação, e permite excluir rascunhos, caches, saídas de build e outras subpastas ruidosas sem enviar seu índice de metadados.",
+    "stats.local.value": "Metadados",
+    "stats.local.label": "Nomes, caminhos, tamanhos, datas e extensões",
+    "stats.permission.value": "Somente leitura",
+    "stats.permission.label": "Permissões explícitas de pastas no macOS",
+    "stats.engine.value": "1.1",
+    "stats.engine.label": "Filtros avançados, exclusões, buscas salvas",
+    "hero.noteLocal.title": "Somente metadados",
+    "hero.noteLocal.text": "O conteúdo dos arquivos não é lido nem indexado.",
+    "hero.noteSpeed.title": "Feito para buscas recorrentes",
+    "hero.noteSpeed.text": "Consultas frequentes ficam prontas na barra lateral.",
+    "features.eyebrow": "NOVIDADES 1.1",
+    "features.title": "Um fluxo mais rico para busca local precisa e reutilizável",
+    "features.description":
+      "As mudanças recentes focam pastas reais de trabalho: filtros mais precisos, menos ruído, buscas salvas e configurações locais mais claras.",
+    "feature.one.title": "Combine filtros na busca avançada",
+    "feature.one.body":
+      "Filtre por palavras-chave, pasta importada, extensão, tamanho, data de criação e data de modificação em uma única tela de busca.",
+    "feature.two.title": "Exclua subpastas ruidosas",
+    "feature.two.body":
+      "Ignore rascunhos, caches, saídas de build ou pastas temporárias. Caminhos excluídos são validados imediatamente e precisam pertencer ao escopo atual.",
+    "feature.three.title": "Salve buscas na barra lateral",
+    "feature.three.body":
+      "Nomeie consultas frequentes, reaplique pela barra lateral e gerencie com renomear, excluir e limpar.",
+    "feature.four.title": "Ajuste configurações do dia a dia",
+    "feature.four.body":
+      "Defina idioma do app, aparência clara ou escura, resultados por página e veja o uso do cache do banco de dados local por pasta importada.",
+    "gallery.eyebrow": "TOUR 1.1",
+    "gallery.title": "Novas telas de busca, da localização rápida ao filtro preciso",
+    "gallery.description":
+      "Estas telas vêm dos assets Store 1.1 preparados em 4 de maio de 2026, com buscas salvas, busca avançada, exclusões e configurações.",
+    "gallery.one.tag": "Busca avançada",
+    "gallery.one.title": "Combine palavras-chave, pasta, extensão, tamanho e datas",
+    "gallery.one.body":
+      "A busca avançada reúne filtros comuns para evitar escrever a sintaxe da consulta manualmente.",
+    "gallery.two.tag": "Exclusões",
+    "gallery.two.title": "Mantenha rascunhos, caches e temporários fora dos resultados",
+    "gallery.two.body":
+      "Regras de exclusão não alteram o índice e removem locais indesejados apenas dos resultados atuais.",
+    "gallery.three.tag": "Configurações",
+    "gallery.three.title": "Controle idioma, tema, paginação e cache local",
+    "gallery.three.body":
+      "As configurações agora incluem idioma, aparência, resultados por página e uso do banco de dados local por pasta importada.",
+    "usecases.eyebrow": "FLUXOS",
+    "usecases.title": "Criado para quem pesquisa as mesmas pastas de trabalho várias vezes",
+    "usecases.one": "Desenvolvedores excluindo build, cache e pastas temporárias",
+    "usecases.two": "Pesquisadores organizando arquivos por data e extensão",
+    "usecases.three": "Criadores localizando mídias grandes por tamanho",
+    "usecases.four": "Equipes salvando consultas locais recorrentes",
+    "privacy.title": "Índice local, buscas salvas e configurações seguem transparentes",
+    "privacy.subtitle":
+      "Última atualização: 4 de maio de 2026. Esta política descreve como SearchFiles trata informações quando você usa o app e este site.",
+    "privacy.highlight.two.title": "A busca avançada ainda usa metadados locais",
+    "privacy.highlight.two.body":
+      "Filtros, subpastas excluídas e buscas salvas consultam metadados no banco local sem enviar seu índice de arquivos.",
+    "privacy.highlight.three.title": "Configurações e cache ficam no dispositivo",
+    "privacy.highlight.three.body":
+      "Idioma, tema, resultados por página, buscas salvas e uso de cache por pasta são tratados localmente.",
+    "policy.one.body":
+      "SearchFiles pode processar nomes de pastas, nomes de arquivos, caminhos, caminhos relativos, extensões, tamanhos e datas de criação ou modificação das pastas importadas. Também pode armazenar nomes de buscas salvas, texto da consulta, escopo de busca e preferências como idioma, tema e resultados por página.",
+    "policy.two.body":
+      "SearchFiles atualmente é projetado em torno da indexação de metadados. Ele não lê intencionalmente o conteúdo dos arquivos para busca, não incorpora identificadores de publicidade e não envia seu índice, buscas salvas ou configurações a um servidor remoto durante o uso normal.",
+    "policy.three.body":
+      "Metadados indexados, buscas salvas e configurações são armazenados localmente no seu Mac, normalmente no diretório Application Support do app e no contêiner sandbox. Você pode remover pastas importadas, limpar buscas salvas e excluir dados locais do app.",
+    "footer.description":
+      "Um app macOS de busca local de arquivos focado em filtros avançados de metadados, buscas salvas e limites transparentes de privacidade."
+  },
+  es: {
+    pageDescription:
+      "SearchFiles 1.1 es una app macOS de búsqueda de archivos centrada en la privacidad, con índice local de metadatos, búsqueda avanzada, exclusión de subcarpetas, búsquedas guardadas y ajustes claros.",
+    "hero.eyebrow": "SEARCHFILES 1.1",
+    "hero.title": "Encuentra archivos del Mac más rápido con búsqueda avanzada, búsquedas guardadas e índice local.",
+    "hero.description":
+      "SearchFiles ahora combina palabras clave, carpetas, extensiones, tamaño, fechas de creación y modificación, y permite excluir borradores, cachés, salidas de build y otras subcarpetas ruidosas sin subir tu índice de metadatos.",
+    "stats.local.value": "Metadatos",
+    "stats.local.label": "Nombres, rutas, tamaños, fechas y extensiones",
+    "stats.permission.value": "Solo lectura",
+    "stats.permission.label": "Permisos explícitos de carpetas en macOS",
+    "stats.engine.value": "1.1",
+    "stats.engine.label": "Filtros avanzados, exclusiones, búsquedas guardadas",
+    "hero.noteLocal.title": "Solo metadatos",
+    "hero.noteLocal.text": "El contenido de archivos no se lee ni se indexa.",
+    "hero.noteSpeed.title": "Pensado para búsquedas repetidas",
+    "hero.noteSpeed.text": "Las consultas frecuentes quedan listas en la barra lateral.",
+    "features.eyebrow": "NOVEDADES 1.1",
+    "features.title": "Un flujo más completo para búsqueda local precisa y reutilizable",
+    "features.description":
+      "Los cambios recientes se centran en carpetas reales de trabajo: filtros más precisos, menos ruido, búsquedas guardadas y ajustes locales más claros.",
+    "feature.one.title": "Combina filtros en búsqueda avanzada",
+    "feature.one.body":
+      "Filtra por palabras clave, carpeta importada, extensión, tamaño, fecha de creación y fecha de modificación en una sola hoja.",
+    "feature.two.title": "Excluye subcarpetas ruidosas",
+    "feature.two.body":
+      "Omite borradores, cachés, salidas de build o carpetas temporales. Las rutas excluidas se validan al instante y deben pertenecer al alcance actual.",
+    "feature.three.title": "Guarda búsquedas en la barra lateral",
+    "feature.three.body":
+      "Nombra consultas frecuentes, reutilízalas desde la barra lateral y gestiónalas con renombrar, eliminar y limpiar.",
+    "feature.four.title": "Ajusta preferencias diarias",
+    "feature.four.body":
+      "Define idioma de la app, apariencia clara u oscura, resultados por página y consulta el uso de caché local por carpeta importada.",
+    "gallery.eyebrow": "TOUR 1.1",
+    "gallery.title": "Nuevas vistas de búsqueda, de localizar rápido a filtrar con precisión",
+    "gallery.description":
+      "Estas pantallas vienen de los assets Store 1.1 preparados el 4 de mayo de 2026, con búsquedas guardadas, búsqueda avanzada, exclusiones y ajustes.",
+    "gallery.one.tag": "Búsqueda avanzada",
+    "gallery.one.title": "Combina palabras clave, carpeta, extensión, tamaño y fechas",
+    "gallery.one.body":
+      "La búsqueda avanzada reúne filtros comunes para evitar escribir a mano la sintaxis de consulta.",
+    "gallery.two.tag": "Exclusiones",
+    "gallery.two.title": "Mantén borradores, cachés y temporales fuera de los resultados",
+    "gallery.two.body":
+      "Las reglas de exclusión no cambian el índice y eliminan ubicaciones no deseadas solo de los resultados actuales.",
+    "gallery.three.tag": "Ajustes",
+    "gallery.three.title": "Controla idioma, tema, paginación y caché local",
+    "gallery.three.body":
+      "Los ajustes ahora incluyen idioma, apariencia, resultados por página y uso de base de datos local por carpeta importada.",
+    "usecases.eyebrow": "FLUJOS",
+    "usecases.title": "Creado para quienes buscan una y otra vez en las mismas carpetas",
+    "usecases.one": "Desarrolladores que excluyen build, caché y carpetas temporales",
+    "usecases.two": "Investigadores que ordenan archivos por fecha y extensión",
+    "usecases.three": "Creadores que localizan medios grandes por tamaño",
+    "usecases.four": "Equipos que guardan consultas locales recurrentes",
+    "privacy.title": "Índice local, búsquedas guardadas y ajustes se mantienen transparentes",
+    "privacy.subtitle":
+      "Última actualización: 4 de mayo de 2026. Esta política describe cómo SearchFiles gestiona información cuando usas la app y este sitio.",
+    "privacy.highlight.two.title": "La búsqueda avanzada sigue usando metadatos locales",
+    "privacy.highlight.two.body":
+      "Filtros, subcarpetas excluidas y búsquedas guardadas consultan metadatos en la base local sin subir tu índice de archivos.",
+    "privacy.highlight.three.title": "Ajustes e información de caché quedan en el dispositivo",
+    "privacy.highlight.three.body":
+      "Idioma, tema, resultados por página, búsquedas guardadas y uso de caché por carpeta se gestionan localmente.",
+    "policy.one.body":
+      "SearchFiles puede procesar nombres de carpetas, nombres de archivos, rutas, rutas relativas, extensiones, tamaños y fechas de creación o modificación de las carpetas importadas. También puede guardar nombres de búsquedas, texto de consulta, alcance de búsqueda y preferencias como idioma, tema y resultados por página.",
+    "policy.two.body":
+      "SearchFiles está diseñado actualmente en torno a la indexación de metadatos. No lee intencionalmente el contenido de archivos para la búsqueda, no incorpora identificadores publicitarios y no envía tu índice, búsquedas guardadas o ajustes a un servidor remoto durante el uso normal.",
+    "policy.three.body":
+      "Los metadatos indexados, búsquedas guardadas y ajustes se almacenan localmente en tu Mac, normalmente dentro del directorio Application Support de la app y su contenedor sandbox. Puedes quitar carpetas importadas, limpiar búsquedas guardadas y eliminar datos locales de la app.",
+    "footer.description":
+      "Una app macOS de búsqueda local de archivos centrada en filtros avanzados de metadatos, búsquedas guardadas y límites de privacidad transparentes."
+  },
+  ko: {
+    pageDescription:
+      "SearchFiles 1.1은 로컬 메타데이터 인덱스, 고급 검색, 하위 폴더 제외, 저장된 검색, 명확한 설정을 갖춘 개인정보 중심 macOS 파일 검색 앱입니다.",
+    "hero.eyebrow": "SEARCHFILES 1.1",
+    "hero.title": "고급 검색, 저장된 검색, 로컬 인덱스로 Mac 파일을 더 빠르게 찾으세요.",
+    "hero.description":
+      "SearchFiles는 이제 키워드, 폴더, 확장자, 파일 크기, 생성일, 수정일을 조합하고, 초안, 캐시, 빌드 출력 같은 하위 폴더를 제외할 수 있습니다. 메타데이터 인덱스는 업로드되지 않습니다.",
+    "stats.local.value": "메타데이터",
+    "stats.local.label": "이름, 경로, 크기, 날짜, 확장자",
+    "stats.permission.value": "읽기 전용",
+    "stats.permission.label": "명시적인 macOS 폴더 권한",
+    "stats.engine.value": "1.1",
+    "stats.engine.label": "고급 필터, 제외, 저장된 검색",
+    "hero.noteLocal.title": "메타데이터만",
+    "hero.noteLocal.text": "파일 내용은 읽거나 인덱싱하지 않습니다.",
+    "hero.noteSpeed.title": "반복 검색을 위해 설계",
+    "hero.noteSpeed.text": "자주 쓰는 쿼리는 사이드바에 보관됩니다.",
+    "features.eyebrow": "1.1 새로운 기능",
+    "features.title": "정확하고 반복 가능한 로컬 파일 검색 워크플로",
+    "features.description":
+      "최신 변경은 실제 작업 폴더에 맞춰져 있습니다. 더 정확한 필터, 적은 노이즈, 저장된 검색, 더 명확한 로컬 설정입니다.",
+    "feature.one.title": "고급 검색에서 여러 필터 조합",
+    "feature.one.body":
+      "키워드, 가져온 폴더, 확장자, 파일 크기, 생성일, 수정일을 하나의 검색 시트에서 필터링합니다.",
+    "feature.two.title": "노이즈가 많은 하위 폴더 제외",
+    "feature.two.body":
+      "초안, 캐시, 빌드 출력, 임시 폴더를 건너뜁니다. 제외 경로는 즉시 검증되며 현재 검색 범위에 속해야 합니다.",
+    "feature.three.title": "검색을 사이드바에 저장",
+    "feature.three.body":
+      "자주 쓰는 쿼리에 이름을 붙이고 사이드바에서 다시 적용하며 이름 변경, 삭제, 전체 삭제로 관리합니다.",
+    "feature.four.title": "일상 설정 조정",
+    "feature.four.body":
+      "앱 언어, 밝은/어두운 테마, 페이지당 결과 수를 설정하고 가져온 폴더별 로컬 데이터베이스 캐시 사용량을 확인합니다.",
+    "gallery.eyebrow": "1.1 제품 둘러보기",
+    "gallery.title": "빠른 찾기부터 정밀 필터링까지, 새로운 검색 화면",
+    "gallery.description":
+      "이 화면들은 2026년 5월 4일 준비된 1.1 스토어 자산에서 가져왔으며 저장된 검색, 고급 검색, 제외, 설정을 보여줍니다.",
+    "gallery.one.tag": "고급 검색",
+    "gallery.one.title": "키워드, 폴더, 확장자, 크기, 날짜 조합",
+    "gallery.one.body":
+      "고급 검색은 일반적인 필터를 한곳에 모아 쿼리 문법을 직접 작성하는 부담을 줄입니다.",
+    "gallery.two.tag": "제외",
+    "gallery.two.title": "초안, 캐시, 임시 파일을 결과에서 제외",
+    "gallery.two.body":
+      "제외 규칙은 인덱스를 바꾸지 않고 현재 결과에서 원하지 않는 위치만 제거합니다.",
+    "gallery.three.tag": "설정",
+    "gallery.three.title": "언어, 테마, 페이지, 로컬 캐시 제어",
+    "gallery.three.body":
+      "설정에는 이제 앱 언어, 외관, 페이지당 결과 수, 가져온 폴더별 로컬 데이터베이스 캐시 사용량이 포함됩니다.",
+    "usecases.eyebrow": "워크플로",
+    "usecases.title": "같은 작업 폴더를 반복해서 검색하는 사람을 위해 제작",
+    "usecases.one": "build, cache, 임시 폴더를 제외하는 개발자",
+    "usecases.two": "날짜와 확장자로 아카이브를 정리하는 연구자",
+    "usecases.three": "크기로 큰 미디어 자산을 찾는 크리에이터",
+    "usecases.four": "반복 로컬 쿼리를 저장하는 팀",
+    "privacy.title": "로컬 인덱스, 저장된 검색, 설정을 투명하게 다룹니다",
+    "privacy.subtitle":
+      "최종 업데이트: 2026년 5월 4일. 이 정책은 앱과 이 웹사이트를 사용할 때 SearchFiles가 정보를 처리하는 방식을 설명합니다.",
+    "privacy.highlight.two.title": "고급 검색도 로컬 메타데이터를 사용합니다",
+    "privacy.highlight.two.body":
+      "필터, 제외 하위 폴더, 저장된 검색은 로컬 데이터베이스의 메타데이터를 조회하며 파일 인덱스를 업로드하지 않습니다.",
+    "privacy.highlight.three.title": "설정과 캐시 정보는 기기에 남습니다",
+    "privacy.highlight.three.body":
+      "언어, 테마, 페이지당 결과 수, 저장된 검색, 폴더별 데이터베이스 캐시 사용량은 로컬에서 처리됩니다.",
+    "policy.one.body":
+      "SearchFiles는 가져온 폴더의 폴더 이름, 파일 이름, 경로, 상대 경로, 확장자, 파일 크기, 생성 또는 수정 날짜를 처리할 수 있습니다. 또한 저장된 검색 이름, 쿼리 텍스트, 검색 범위, 언어, 테마, 페이지당 결과 수 같은 설정을 저장할 수 있습니다.",
+    "policy.two.body":
+      "SearchFiles는 현재 메타데이터 인덱싱을 중심으로 설계되어 있습니다. 검색을 위해 파일 내용을 의도적으로 읽지 않고, 광고 식별자를 포함하지 않으며, 일반적인 사용 중에 인덱스, 저장된 검색, 설정을 원격 서버로 보내지 않습니다.",
+    "policy.three.body":
+      "인덱싱된 메타데이터, 저장된 검색, 설정은 Mac에 로컬로 저장되며 일반적으로 앱의 Application Support 디렉터리와 샌드박스 컨테이너 안에 있습니다. 가져온 폴더를 제거하고 저장된 검색을 지우며 로컬 앱 데이터를 삭제할 수 있습니다.",
+    "footer.description":
+      "고급 메타데이터 필터링, 저장된 검색, 투명한 개인정보 경계에 집중한 macOS용 로컬 우선 파일 검색 앱입니다."
+  }
+};
+
+Object.entries(version11Copy).forEach(([locale, copy]) => {
+  Object.assign(translations[locale], copy);
+});
+
 const altText = {
   "zh-Hans": {
     hero: "SearchFiles 应用概览截图",
@@ -1092,6 +1838,73 @@ const altText = {
     code: "SearchFiles 코드 검색 스크린샷"
   }
 };
+
+const version11AltText = {
+  "zh-Hans": {
+    hero: "SearchFiles 1.1 快速搜索与保存搜索截图",
+    overview: "SearchFiles 1.1 高级搜索截图",
+    size: "SearchFiles 1.1 排除子目录截图",
+    code: "SearchFiles 1.1 设置页截图"
+  },
+  "zh-Hant": {
+    hero: "SearchFiles 1.1 快速搜尋與儲存搜尋截圖",
+    overview: "SearchFiles 1.1 進階搜尋截圖",
+    size: "SearchFiles 1.1 排除子資料夾截圖",
+    code: "SearchFiles 1.1 設定頁截圖"
+  },
+  en: {
+    hero: "SearchFiles 1.1 fast search and saved search screenshot",
+    overview: "SearchFiles 1.1 Advanced Search screenshot",
+    size: "SearchFiles 1.1 subfolder exclusion screenshot",
+    code: "SearchFiles 1.1 Settings screenshot"
+  },
+  fr: {
+    hero: "Capture SearchFiles 1.1 avec recherche rapide et recherche enregistrée",
+    overview: "Capture SearchFiles 1.1 de la recherche avancée",
+    size: "Capture SearchFiles 1.1 des exclusions de sous-dossiers",
+    code: "Capture SearchFiles 1.1 des réglages"
+  },
+  de: {
+    hero: "SearchFiles 1.1 Screenshot mit schneller Suche und gespeicherter Suche",
+    overview: "SearchFiles 1.1 Screenshot der erweiterten Suche",
+    size: "SearchFiles 1.1 Screenshot der Unterordner-Ausschlüsse",
+    code: "SearchFiles 1.1 Screenshot der Einstellungen"
+  },
+  ja: {
+    hero: "SearchFiles 1.1 の高速検索と保存済み検索スクリーンショット",
+    overview: "SearchFiles 1.1 の詳細検索スクリーンショット",
+    size: "SearchFiles 1.1 のサブフォルダ除外スクリーンショット",
+    code: "SearchFiles 1.1 の設定スクリーンショット"
+  },
+  it: {
+    hero: "Screenshot SearchFiles 1.1 con ricerca rapida e ricerca salvata",
+    overview: "Screenshot SearchFiles 1.1 della ricerca avanzata",
+    size: "Screenshot SearchFiles 1.1 delle esclusioni di sottocartelle",
+    code: "Screenshot SearchFiles 1.1 delle impostazioni"
+  },
+  pt: {
+    hero: "Captura do SearchFiles 1.1 com busca rápida e busca salva",
+    overview: "Captura do SearchFiles 1.1 da busca avançada",
+    size: "Captura do SearchFiles 1.1 de exclusões de subpastas",
+    code: "Captura do SearchFiles 1.1 das configurações"
+  },
+  es: {
+    hero: "Captura de SearchFiles 1.1 con búsqueda rápida y búsqueda guardada",
+    overview: "Captura de SearchFiles 1.1 de búsqueda avanzada",
+    size: "Captura de SearchFiles 1.1 de exclusión de subcarpetas",
+    code: "Captura de SearchFiles 1.1 de ajustes"
+  },
+  ko: {
+    hero: "SearchFiles 1.1 빠른 검색 및 저장된 검색 스크린샷",
+    overview: "SearchFiles 1.1 고급 검색 스크린샷",
+    size: "SearchFiles 1.1 하위 폴더 제외 스크린샷",
+    code: "SearchFiles 1.1 설정 스크린샷"
+  }
+};
+
+Object.entries(version11AltText).forEach(([locale, copy]) => {
+  Object.assign(altText[locale], copy);
+});
 
 const textNodes = [...document.querySelectorAll("[data-i18n]")];
 const pageDescription = document.querySelector('meta[name="description"]');
